@@ -1,0 +1,10 @@
+[package]
+name = "gclock"
+version = "0.1.0"
+authors = ["Uttarayan Mondal <uttarayan21@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+ntext = { git = "https://github.com/uttarayan21/ntext" }
+chrono = "0.4.19"
+pyo3 = "0.13.2"
