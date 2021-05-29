@@ -1,8 +1,8 @@
-# Install
+# Dependencies
 
-https://github.com/desbma/GoogleSpeech
-
-run
+[desbma/GoogleSpeech](https://github.com/desbma/GoogleSpeech)
+to install
 ```bash
-google_speech -l en-us (cargo run)
+pip install google_speech
 ```
+
