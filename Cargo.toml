@@ -7,4 +7,4 @@ edition = "2018"
 [dependencies]
 ntext = { git = "https://github.com/uttarayan21/ntext" }
 chrono = "0.4.19"
-pyo3 = "0.13.2"
+google_speech = { git = "https://github.com/uttarayan21/google_speech_rs" }

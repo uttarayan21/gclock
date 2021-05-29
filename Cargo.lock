@@ -48,8 +48,8 @@ name = "gclock"
 version = "0.1.0"
 dependencies = [
  "chrono",
+ "google_speech",
  "ntext",
- "pyo3",
 ]
 
 [[package]]
@@ -61,6 +61,14 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "google_speech"
+version = "0.1.0"
+source = "git+https://github.com/uttarayan21/google_speech_rs#e90db39a41c6984f75b013fe77fcb76a5a919aa7"
+dependencies = [
+ "pyo3",
 ]
 
 [[package]]

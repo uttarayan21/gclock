@@ -1,8 +1,6 @@
-extern crate chrono;
-extern crate ntext;
 use chrono::{DateTime, Local, Timelike};
+use google_speech::{Lang,Speech};
 use ntext::to_text;
-mod tts;
 
 fn main() {
     let now: DateTime<Local>;
@@ -34,5 +32,6 @@ fn main() {
         _ => time = "Unable to obtain time".to_string(),
     }
     println!("{}", time);
-    tts::speak(&time).unwrap();
+    let speech = Speech::new(time,Lang::en_us).unwrap();
+    speech.play().unwrap();
 }
